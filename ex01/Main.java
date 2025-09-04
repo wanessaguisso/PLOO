@@ -19,7 +19,8 @@ public class Main {
             System.out.println("4 – Exibir histórico de navegação.");
             System.out.println("5 – Sair.");
             menu = sc.nextInt();
-
+            sc.nextLine();
+            
             switch (menu) {
                 case 1:
                     acessarNovaPagina(historico, historicoCompleto);
@@ -45,8 +46,9 @@ public class Main {
     }
 
     static void acessarNovaPagina(LinkedList<Pagina> stack, LinkedList<Pagina> historicoCompleto) {
-        System.out.println("Digite o título da página: ");
-        String titulo = sc.next();
+        System.out.print("Digite o título da página: ");
+        String titulo = sc.nextLine();
+    
         System.out.println("Digite a URL da página: ");
         String url = sc.next();
 

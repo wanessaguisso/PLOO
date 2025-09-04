@@ -1,10 +1,9 @@
 package ex02;
 
-import java.util.LinkedList;
+import bibliotecas.BibLista;
 import java.util.Collections;
 import java.util.HashSet;
-
-import bibliotecas.BibLista;
+import java.util.LinkedList;
 
 /*
  * 2 – Crie uma lista com 20 números inteiros.
@@ -23,6 +22,7 @@ public class ordemEInversao {
 
         // Preenche lista1 usando a biblioteca
         BibLista.preencher(lista1);
+        
 
         // Retira repetidos com HashSet e cria lista2
         lista2 = new LinkedList<>(new HashSet<>(lista1));
